@@ -153,3 +153,21 @@
     line-height:1.8;
 
 }
+
+ /* ========================================
+   SCROLL REVEAL
+======================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+} 

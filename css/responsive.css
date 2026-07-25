@@ -241,3 +241,171 @@
       font-size: 12px;
     }
   }
+
+  /* ==================================
+   土台を整え
+================================== */
+@media screen and (max-width: 767px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-heading__en {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  .section-heading__ja {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.35;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  p {
+    line-height: 1.9;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .header {
+    height: 70px;
+  }
+
+  .header__inner {
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__logo {
+    position: relative;
+    z-index: 1001;
+  }
+
+  .header__logo img {
+    max-width: 150px;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    width: 85%;
+    max-width: 360px;
+    height: 100vh;
+    padding: 110px 30px 40px;
+    background: rgba(5, 9, 17, 0.98);
+    transition: right 0.4s ease;
+  }
+
+  .header__nav.is-open {
+    right: 0;
+  }
+
+  .header__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .header__nav-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  }
+
+  .header__nav-link {
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 1rem;
+  }
+
+  .header__entry {
+    display: none;
+  }
+
+  .menu-button {
+    position: relative;
+    z-index: 1001;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 26px;
+    height: 1px;
+    background: #d4af37;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .menu-button.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-button.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-button.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}

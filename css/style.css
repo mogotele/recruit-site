@@ -16,4 +16,6 @@
       "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; */
   }
 
-  
+  body.menu-open {
+  overflow: hidden;
+}

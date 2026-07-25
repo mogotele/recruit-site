@@ -979,118 +979,65 @@
 ======================================== */
 
 .recruit {
-  position: relative;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  overflow: hidden;
+  padding: 84px 0;
+}
+
+.recruit::before {
+  top: 18px;
+  left: 24px;
+  transform: none;
+  font-size: clamp(65px, 18vw, 105px);
+  color: rgba(212, 175, 55, 0.09);
 }
 
 .recruit .container {
-  position: relative;
   display: block;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
 }
 
-/* 背景の大きな文字 */
-.recruit .container::before {
-  content: "RECRUIT";
-  position: absolute;
-  top: -8px;
-  right: -6px;
-  z-index: 0;
-  color: rgba(255, 255, 255, 0.045);
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(64px, 20vw, 96px);
-  font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: 0.01em;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-.recruit-left,
-.recruit-right {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-
-/* 左側 */
 .recruit-left {
-  margin-bottom: 38px;
+  position: static;
+  padding-top: 20px;
 }
 
-.recruit .section-subtitle {
-  margin: 0 0 12px;
-  font-size: 12px;
-  letter-spacing: 0.22em;
+.recruit-left .section-text {
+  max-width: 100%;
 }
 
-.recruit .section-title {
-  margin: 0 0 14px;
-  font-size: clamp(28px, 8vw, 36px);
-  line-height: 1.4;
-}
-
-.recruit .section-text {
-  margin: 0 0 28px;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-/* 改行を自然にする */
-.recruit .section-text br {
-  display: none;
-}
-
-/* エントリーボタン */
-.recruit-btn {
-  display: flex;
-  width: 100%;
-  min-height: 58px;
-  padding: 15px 20px;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* 募集要項一覧 */
 .recruit-right {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  width: 100%;
+  margin-top: 42px;
+  border-radius: 18px;
 }
 
 .recruit-item {
-  display: grid;
-  width: 100%;
-  min-width: 0;
-  padding: 20px 0;
-  grid-template-columns: 110px minmax(0, 1fr);
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: 130px minmax(0, 1fr);
+  min-height: 92px;
+  padding: 24px 26px;
+  column-gap: 22px;
+}
+
+.recruit-item:not(:last-child)::after {
+  right: 26px;
+  left: 26px;
+}
+
+.recruit-item:hover {
+  padding-left: 26px;
+  background: transparent;
 }
 
 .recruit-item span {
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.7;
+  font-size: 13px;
 }
 
 .recruit-item p {
-  min-width: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.8;
-  overflow-wrap: anywhere;
+  font-size: 15px;
+}
+
+.recruit-btn {
+  width: 100%;
+  min-height: 62px;
+  margin-top: 34px;
 }
 
 /* ========================================

@@ -1,376 +1,198 @@
-/* スマホ・タブレット設定 */
-
-/* スマホ */
-/* @media (max-width: 1100px) {
-    .site-nav {
-      display: none;
-    }
-  
-    .site-header__inner {
-      min-height: 74px;
-    }
-  
-    .site-header__entry {
-      margin-left: auto;
-    }
-  }
-  
-  @media (max-width: 640px) {
-    .site-header__inner {
-      padding: 0 20px;
-    }
-  
-    .site-logo__main {
-      font-size: 19px;
-    }
-  
-    .site-logo__sub {
-      font-size: 9px;
-    }
-  
-    .site-header__entry {
-      display: none;
-    }
-  
-    .menu-button {
-      display: block;
-      margin-left: auto;
-    }
-  
-    .hero {
-      padding-top: 130px;
-    }
-  } */
-  /* ========================================
+/* ========================================
    タブレット
 ======================================== */
 
-@media (max-width: 1100px) {
-    .site-nav {
-      display: none;
-    }
-  
-    .site-header__inner {
-      min-height: 74px;
-      padding: 0 24px;
-    }
-  
-    .site-header__entry {
-      margin-left: auto;
-    }
-  
-    .hero {
-      padding: 140px 5% 70px;
-    }
-  
-    .hero-content {
-      width: min(620px, 100%);
-    }
-  
-    .hero-title {
-      font-size: clamp(56px, 8vw, 76px);
-    }
-  
-    .hero-feature {
-      gap: 16px;
-    }
-  }
-  
-  /* ========================================
-     スマートフォン
-  ======================================== */
-  
-  @media (max-width: 768px) {
-    html,
-    body {
-      width: 100%;
-      overflow-x: hidden;
-    }
-  
-    .site-header {
-      position: absolute;
-    }
-  
-    .site-header__inner {
-      min-height: 92px;
-      padding: 0 18px;
-    }
-  
-    .site-logo__main {
-      font-size: 24px;
-    }
-  
-    .site-logo__sub {
-      margin-top: 8px;
-      font-size: 11px;
-      letter-spacing: 0.28em;
-    }
-  
-    .site-header__entry {
-      display: none;
-    }
-  
-    .menu-button {
-      display: block;
-      margin-left: auto;
-    }
-  
-    .hero {
-      min-height: auto;
-      padding: 150px 20px 64px;
-      align-items: flex-start;
-      background-position: 66% center;
-    }
-  
-    .hero-content {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .hero-sub {
-      margin: 0 0 20px;
-      font-size: 22px;
-    }
-  
-    .hero-title {
-      margin: 0;
-      font-size: clamp(46px, 13vw, 62px);
-      line-height: 1.12;
-      overflow-wrap: anywhere;
-    }
-  
-    .hero-job {
-      margin: 30px 0 38px;
-      font-size: 20px;
-      line-height: 1.6;
-    }
-  
-    .hero-feature {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px 14px;
-      margin-bottom: 38px;
-    }
-  
-    .feature-box {
-      min-width: 0;
-      text-align: center;
-    }
-  
-    .icon {
-      width: 56px;
-      height: 56px;
-      margin-bottom: 12px;
-      font-size: 24px;
-    }
-  
-    .feature-box h3 {
-      margin: 0 0 8px;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  
-    .feature-box p {
-      margin: 0;
-      font-size: 13px;
-      line-height: 1.6;
-    }
-  
-    .hero-btn {
-      width: 100%;
-      max-width: 360px;
-      padding: 18px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-    }
-  }
-  
-  /* ========================================
-     小さいスマートフォン
-  ======================================== */
-  
-  @media (max-width: 390px) {
-    .site-header__inner {
-      min-height: 84px;
-      padding: 0 14px;
-    }
-  
-    .site-logo__main {
-      font-size: 21px;
-    }
-  
-    .site-logo__sub {
-      font-size: 9px;
-    }
-  
-    .hero {
-      padding: 132px 16px 52px;
-      background-position: 64% center;
-    }
-  
-    .hero-sub {
-      font-size: 19px;
-    }
-  
-    .hero-title {
-      font-size: 44px;
-    }
-  
-    .hero-job {
-      font-size: 17px;
-    }
-  
-    .hero-feature {
-      gap: 24px 10px;
-    }
-  
-    .icon {
-      width: 50px;
-      height: 50px;
-      font-size: 21px;
-    }
-  
-    .feature-box h3 {
-      font-size: 14px;
-    }
-  
-    .feature-box p {
-      font-size: 12px;
-    }
+@media screen and (max-width: 1100px) {
+
+  .site-nav {
+    display: none;
   }
 
-  /* ==================================
-   土台を整え
-================================== */
-@media screen and (max-width: 767px) {
+  .site-header__inner {
+    min-height: 74px;
+    padding: 0 24px;
+  }
+
+  .site-header__entry {
+    margin-left: auto;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .hero {
+    padding: 140px 5% 70px;
+  }
+
+  .hero-content {
+    width: min(620px, 100%);
+  }
+
+  .hero-title {
+    font-size: clamp(56px, 8vw, 76px);
+  }
+
+  .hero-feature {
+    gap: 16px;
+  }
+}
+
+
+/* ========================================
+   スマートフォン
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* ---------- 全体 ---------- */
 
   html {
+    width: 100%;
     font-size: 14px;
   }
 
   body {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
     overflow-x: hidden;
   }
 
-  img {
+  main,
+  header,
+  footer,
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img,
+  picture,
+  video {
+    display: block;
     max-width: 100%;
     height: auto;
   }
 
   .container {
     width: 100%;
-    max-width: none;
-    padding-left: 20px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 20px;
+    padding-left: 20px;
   }
 
-  section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  section:not(.hero) {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
+
+  /* ---------- 共通見出し ---------- */
 
   .section-heading {
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 36px;
   }
 
   .section-heading__en {
-    font-size: 2.4rem;
-    line-height: 1;
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
   }
 
   .section-heading__ja {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 13px;
   }
 
-  h1 {
-    font-size: 2.3rem;
-    line-height: 1.35;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    line-height: 1.4;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-    line-height: 1.5;
+  h1,
+  h2,
+  h3,
+  p {
+    overflow-wrap: anywhere;
   }
 
   p {
     line-height: 1.9;
   }
 
-  a,
-  button {
-    -webkit-tap-highlight-color: transparent;
+  /* ---------- ヘッダー ---------- */
+
+  .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
+
+  .site-header__inner {
+    min-height: 84px;
+    padding: 0 18px;
+  }
+
+  .site-logo__main {
+    font-size: 21px;
+    line-height: 1.3;
+  }
+
+  .site-logo__sub {
+    margin-top: 5px;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+  }
+
+  .site-header__entry {
+    display: none;
+  }
+
+  .site-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: block;
+  width: min(85%, 360px);
+  height: 100dvh;
+  padding: 110px 30px 40px;
+  overflow-y: auto;
+  background: rgba(5, 9, 17, 0.98);
+  transform: translateX(110%);
+  visibility: hidden;
+  transition:
+    transform 0.4s ease,
+    visibility 0.4s ease;
 }
 
-@media screen and (max-width: 767px) {
-
-  .header {
-    height: 70px;
-  }
-
-  .header__inner {
-    height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .header__logo {
-    position: relative;
-    z-index: 1001;
-  }
-
-  .header__logo img {
-    max-width: 150px;
-  }
-
-  .header__nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 1000;
-    width: 85%;
-    max-width: 360px;
-    height: 100vh;
-    padding: 110px 30px 40px;
-    background: rgba(5, 9, 17, 0.98);
-    transition: right 0.4s ease;
-  }
-
-  .header__nav.is-open {
-    right: 0;
-  }
-
-  .header__nav-list {
+.site-nav.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+  .site-nav ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 0;
   }
 
-  .header__nav-item {
+  .site-nav li {
     width: 100%;
     border-bottom: 1px solid rgba(212, 175, 55, 0.25);
   }
 
-  .header__nav-link {
+  .site-nav a {
     display: block;
     width: 100%;
     padding: 18px 0;
-    font-size: 1rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
   }
 
-  .header__entry {
-    display: none;
-  }
+  /* ---------- メニューボタン ---------- */
 
   .menu-button {
     position: relative;
@@ -378,6 +200,8 @@
     display: flex;
     width: 44px;
     height: 44px;
+    margin-left: auto;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -407,5 +231,2423 @@
 
   .menu-button.is-open span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* ---------- ヒーロー ---------- */
+
+  .hero {
+    min-height: 100svh;
+    padding: 130px 20px 56px;
+    align-items: flex-start;
+    background-position: 65% center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-sub {
+    margin: 0 0 18px;
+    font-size: clamp(17px, 5vw, 22px);
+    line-height: 1.5;
+  }
+
+  .hero-title {
+    margin: 0;
+    font-size: clamp(40px, 12vw, 56px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-job {
+    margin: 26px 0 32px;
+    font-size: clamp(16px, 4.5vw, 20px);
+    line-height: 1.7;
+  }
+
+  .hero-feature {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 12px;
+    margin-bottom: 34px;
+  }
+
+  .feature-box {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 12px;
+    font-size: 22px;
+  }
+
+  .feature-box h3 {
+    margin: 0 0 7px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .feature-box p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .hero-btn {
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    min-height: 56px;
+    padding: 16px 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* ========================================
+   WHY / REASON
+======================================== */
+.reason {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.reason .section-subtitle {
+  margin-bottom: 12px;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+}
+
+.reason .section-title {
+  margin-bottom: 16px;
+  font-size: clamp(28px, 8vw, 38px);
+  line-height: 1.4;
+}
+
+.reason .section-text {
+  margin-bottom: 38px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.reason-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  padding: 34px 24px 30px;
+}
+
+.reason-number {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.reason-icon {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 42px;
+}
+
+.reason-card h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.reason-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+/* ========================================
+   WORK
+======================================== */
+
+.work {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.work .container {
+  position: relative;
+}
+
+/* スマホだけ背景に大きくWORKを表示 */
+.work .container::before {
+  content: "WORK";
+  position: absolute;
+  top: -18px;
+  right: -4px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.055);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(70px, 23vw, 105px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+.work .section-subtitle,
+.work .section-title,
+.work .section-text,
+.work-layout {
+  position: relative;
+  z-index: 1;
+}
+
+.work .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+}
+
+.work .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.work .section-text {
+  margin: 0 0 38px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* PCの横並びを縦並びに変更 */
+.work-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 44px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* 仕事内容の説明部分 */
+.work-intro {
+  width: 100%;
+  min-width: 0;
+}
+
+.work-label {
+  margin: 0 0 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+}
+
+.work-intro h3 {
+  margin: 0 0 20px;
+  font-size: clamp(21px, 6vw, 27px);
+  line-height: 1.65;
+}
+
+.work-intro h3 br {
+  display: none;
+}
+
+.work-intro > p:not(.work-label) {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.work-link {
+  display: flex;
+  width: 100%;
+  max-width: 340px;
+  min-height: 56px;
+  margin-top: 28px;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.work-link span {
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+/* 業務フロー */
+.work-flow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+}
+
+.work-step {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  padding: 24px 18px 22px;
+}
+
+.work-step__number {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.work-step__content {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.work-step__icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.work-step__content > div:last-child {
+  min-width: 0;
+  padding-right: 28px;
+}
+
+.work-step h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.work-step p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   WORKカード崩れの修正
+======================================== */
+@media screen and (max-width: 768px) {
+
+  .work-layout {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .work-intro {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .work-flow {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .work-step {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 150px;
+    margin: 0;
+    padding: 28px 64px 26px 22px;
+  }
+
+  .work-step__content {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .work-step__icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-step__content > div:last-child {
+    width: auto;
+    min-width: 0;
+    flex: 1;
+    padding: 0;
+  }
+
+  .work-step h4,
+  .work-step p {
+    width: 100%;
+    max-width: none;
+    writing-mode: horizontal-tb;
+    word-break: normal;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .work-step h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .work-step p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .work-step__number {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+/* ========================================
+   COMPANY DATA / NUMBERS
+======================================== */
+
+.numbers {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.numbers .container {
+  position: relative;
+}
+
+/* スマホだけ背景に大きくDATAを表示 */
+.numbers .container::before {
+  content: "DATA";
+  position: absolute;
+  top: -10px;
+  right: -2px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(76px, 24vw, 110px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+.numbers .section-subtitle,
+.numbers .section-title,
+.numbers .section-text,
+.numbers-grid,
+.numbers-caution {
+  position: relative;
+  z-index: 1;
+}
+
+.numbers .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.numbers .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.numbers .section-text {
+  margin: 0 0 36px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* 数字カード */
+.numbers-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.number-card {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 210px;
+  padding: 24px 14px 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.number-card__icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.number-card__label {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.number-card__value {
+  display: flex;
+  margin: 0 0 10px;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.number-card__value span {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(42px, 12vw, 58px);
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.number-card__value small {
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.number-card__note {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.numbers-caution {
+  margin: 24px 0 0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   PEOPLE
+======================================== */
+
+.people {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.people .container {
+  position: relative;
+}
+
+/* スマホだけ背景に大きくPEOPLEを表示 */
+.people .container::before {
+  content: "PEOPLE";
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.045);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(64px, 19vw, 94px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+
+.people .section-subtitle,
+.people .section-title,
+.people .section-text,
+.people-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.people .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.people .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.people .section-text {
+  margin: 0 0 38px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* 社員カードを1列表示 */
+.people-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.people-card {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* 社員写真 */
+.people-card__image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.people-card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.people-card__number {
+  position: absolute;
+  right: 18px;
+  bottom: 14px;
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* カード本文 */
+.people-card__body {
+  width: 100%;
+  padding: 28px 22px 26px;
+}
+
+.people-card__job {
+  margin: 0 0 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+.people-card__body h3 {
+  margin: 0 0 20px;
+  font-size: clamp(20px, 5.8vw, 26px);
+  line-height: 1.65;
+}
+
+.people-card__body h3 br {
+  display: none;
+}
+
+/* 職種と入社年数 */
+.people-card__profile {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.people-card__profile p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.people-card__profile span {
+  flex-shrink: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* インタビュー本文 */
+.people-card__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* インタビューボタン */
+.people-card__link {
+  display: flex;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 24px;
+  padding: 14px 4px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.people-card__link span {
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+/* ========================================
+   ENVIRONMENT
+======================================== */
+
+.environment {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.environment .container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* スマホ用の背景文字 */
+.environment .container::before {
+  content: "ENVIRONMENT";
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.04);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(48px, 14vw, 72px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.environment .section-subtitle,
+.environment .section-title,
+.environment .section-text,
+.environment-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.environment .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.environment .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(27px, 7.5vw, 35px);
+  line-height: 1.45;
+}
+
+.environment .section-text {
+  max-width: 100%;
+  margin: 0 0 36px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* カード一覧 */
+.environment-grid {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.environment-card {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 210px;
+  padding: 24px 16px 22px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* アイコン */
+.environment-card__icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* タイトル */
+.environment-card h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+/* 説明文 */
+.environment-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* ========================================
+   RECRUIT
+======================================== */
+
+.recruit {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.recruit .container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* 背景の大きな文字 */
+.recruit .container::before {
+  content: "RECRUIT";
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.045);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(64px, 20vw, 96px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.recruit-left,
+.recruit-right {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* 左側 */
+.recruit-left {
+  margin-bottom: 38px;
+}
+
+.recruit .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.recruit .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.recruit .section-text {
+  margin: 0 0 28px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* 改行を自然にする */
+.recruit .section-text br {
+  display: none;
+}
+
+/* エントリーボタン */
+.recruit-btn {
+  display: flex;
+  width: 100%;
+  min-height: 58px;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* 募集要項一覧 */
+.recruit-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.recruit-item {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  padding: 20px 0;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.recruit-item span {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.recruit-item p {
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* ========================================
+   FAQ
+======================================== */
+
+.faq {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.faq .container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* スマホ用の背景文字 */
+.faq .container::before {
+  content: "FAQ";
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(82px, 25vw, 120px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+.faq .section-subtitle,
+.faq .section-title,
+.faq .section-text,
+.faq-list {
+  position: relative;
+  z-index: 1;
+}
+
+.faq .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.faq .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.faq .section-text {
+  margin: 0 0 36px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* FAQ一覧 */
+.faq-list {
+  width: 100%;
+  max-width: 100%;
+}
+
+.faq-item {
+  width: 100%;
+  min-width: 0;
+}
+
+/* 質問ボタン */
+.faq-question {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  min-height: 76px;
+  padding: 18px 16px;
+  grid-template-columns: 34px minmax(0, 1fr) 34px;
+  gap: 12px;
+  align-items: center;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question__mark {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.faq-question__text {
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.faq-question__icon {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+/* 回答 */
+.faq-answer {
+  width: 100%;
+  min-width: 0;
+}
+
+.faq-answer__inner {
+  display: grid;
+  width: 100%;
+  padding: 20px 16px 24px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.faq-answer__mark {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.faq-answer__inner p {
+  min-width: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.95;
+  overflow-wrap: anywhere;
+}
+
+/* 開閉時のプラスアイコン */
+.faq-question__icon i {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.is-open .faq-question__icon i {
+  transform: rotate(45deg);
+}
+
+/* ========================================
+   SELECTION FLOW
+======================================== */
+
+.selection-flow {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.selection-flow .container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* 背景の大きな文字 */
+.selection-flow .container::before {
+  content: "FLOW";
+  position: absolute;
+  top: -8px;
+  right: -4px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.045);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(74px, 23vw, 110px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+
+.selection-flow .section-subtitle,
+.selection-flow .section-title,
+.selection-flow .section-text,
+.selection-flow__list,
+.selection-flow__note {
+  position: relative;
+  z-index: 1;
+}
+
+.selection-flow .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.selection-flow .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.selection-flow .section-text {
+  margin: 0 0 38px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* 縦方向の流れ */
+.selection-flow__list {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  gap: 0;
+}
+
+.selection-step {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  min-height: 150px;
+  padding: 24px 20px 24px 82px;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+/* 左側の縦ライン */
+.selection-step:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 64px;
+  bottom: -34px;
+  left: 36px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 番号 */
+.selection-step__number {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.2;
+}
+
+/* アイコン */
+.selection-step__icon {
+  position: absolute;
+  top: 24px;
+  left: 14px;
+  z-index: 2;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.selection-step h3 {
+  margin: 0 44px 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.selection-step p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* PC用矢印はスマホで非表示 */
+.selection-flow__arrow {
+  display: none;
+}
+
+.selection-flow__note {
+  margin: 24px 0 0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   ENTRY CTA
+======================================== */
+
+.entry-cta {
+  position: relative;
+  min-height: 700px;
+  padding: 90px 0 76px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.entry-cta__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.entry-cta .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 46px;
+  padding-right: 28px;
+}
+
+.entry-cta__content {
+  width: 100%;
+  max-width: 570%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.entry-cta__english {
+  margin: 0 0 26px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.24em;
+}
+
+.entry-cta__title br {
+  display: block;
+}
+
+.entry-cta__title {
+  max-width: 540%;
+  margin: 0 0 22px;
+  font-size: clamp(34px, 9vw, 46px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.entry-cta__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.entry-cta__text br {
+  display: none;
+}
+
+/* ボタンを縦並び */
+.entry-cta__buttons {
+  display: flex;
+  width: 100%;
+  margin-top: 34px;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.entry-cta__button {
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  padding: 16px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.entry-cta__button--primary {
+  justify-content: space-between;
+}
+
+.entry-cta__button--primary span {
+  flex: 1;
+  text-align: center;
+}
+
+.entry-cta__button--primary i {
+  flex-shrink: 0;
+}
+
+.entry-cta__button--secondary {
+  justify-content: center;
+}
+
+.entry-cta__note {
+  margin: 20px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+.contact .container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* スマホ用背景文字 */
+.contact .container::before {
+  content: "CONTACT";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.045);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(58px, 18vw, 90px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.contact-heading,
+.contact-box {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-heading {
+  margin-bottom: 36px;
+}
+
+.contact .section-subtitle {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+}
+
+.contact .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.4;
+}
+
+.contact .section-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.contact .section-text br {
+  display: none;
+}
+
+/* フォーム全体 */
+.contact-box {
+  width: 100%;
+  max-width: 100%;
+  padding: 30px 22px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-form__group {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+/* PCの2列をスマホで1列へ */
+.contact-form__row {
+  display: block;
+  width: 100%;
+}
+
+.contact-form__row .contact-form__group {
+  width: 100%;
+}
+
+/* ラベル */
+.contact-form__group label,
+.contact-form__label {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.contact-form__required,
+.contact-form__optional {
+  display: inline-flex;
+  min-height: 22px;
+  padding: 2px 7px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 10px;
+  line-height: 1;
+}
+
+/* 入力欄 */
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select {
+  min-height: 56px;
+  padding: 14px 16px;
+}
+
+.contact-form textarea {
+  min-height: 180px;
+  padding: 16px;
+  line-height: 1.8;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 13px;
+}
+
+/* セレクト欄 */
+.contact-form__select {
+  position: relative;
+  width: 100%;
+}
+
+.contact-form__select select {
+  padding-right: 48px;
+  appearance: none;
+}
+
+.contact-form__select i {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 13px;
+}
+
+/* 免許チェック欄 */
+.contact-form__checkboxes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.contact-checkbox {
+  display: flex;
+  min-height: 52px;
+  margin: 0;
+  padding: 12px 13px;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.contact-checkbox input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.contact-checkbox span {
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* プライバシーポリシー */
+.contact-form__privacy {
+  margin-top: 4px;
+}
+
+.contact-privacy {
+  display: flex;
+  margin: 0;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.contact-privacy input {
+  width: 19px;
+  height: 19px;
+  margin: 3px 0 0;
+  flex-shrink: 0;
+}
+
+.contact-privacy span {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* 送信ボタン */
+.contact-form__submit {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contact-form__submit button {
+  display: flex;
+  width: 100%;
+  min-height: 62px;
+  padding: 16px 22px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form__submit button span {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-form__submit button i {
+  flex-shrink: 0;
+}
+
+.contact-form__note {
+  margin: 18px 0 0;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.footer__top-line {
+  width: 100%;
+  height: 1px;
+}
+
+/* 全体を縦並び */
+.footer__main {
+  display: flex;
+  width: 100%;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  gap: 44px;
+}
+
+/* 会社情報 */
+.footer__company {
+  width: 100%;
+}
+
+.footer__logo {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.footer__logo-ja {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.footer__logo-en {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.footer__message {
+  margin: 24px 0 20px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.footer__address {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.9;
+}
+
+.footer__contact-info {
+  display: flex;
+  width: 100%;
+  margin-top: 22px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__contact-info a {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer__contact-info i {
+  width: 20px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/* ナビゲーション */
+.footer__navigation {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 18px;
+}
+
+.footer__menu {
+  min-width: 0;
+}
+
+.footer__heading {
+  margin: 0 0 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.footer__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__menu li + li {
+  margin-top: 13px;
+}
+
+.footer__menu a {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+/* SNS・各種リンク */
+.footer__links {
+  width: 100%;
+}
+
+.footer__social {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.footer__social a {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__entry-button,
+.footer__company-link {
+  display: flex;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 18px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.footer__entry-button {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer__company-link {
+  font-size: 13px;
+}
+
+.footer__entry-button span,
+.footer__company-link span {
+  min-width: 0;
+}
+
+.footer__entry-button i,
+.footer__company-link i {
+  flex-shrink: 0;
+}
+
+/* 下部 */
+.footer__bottom {
+  display: flex;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.footer__legal a {
+  font-size: 11px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+}
+
+/* ページトップボタン */
+.footer__page-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 50;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ========================================
+   小さいスマートフォン
+======================================== */
+
+@media screen and (max-width: 390px) {
+
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .site-header__inner {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .site-logo__main {
+    font-size: 19px;
+  }
+
+  .site-logo__sub {
+    font-size: 8px;
+  }
+
+  .hero {
+    padding: 120px 16px 48px;
+    background-position: 63% center;
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 11.5vw, 44px);
+  }
+
+  .hero-feature {
+    gap: 22px 10px;
+  }
+}
+
+/* WHY / REASON */
+
+.reason {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.reason .section-title {
+  font-size: 27px;
+}
+
+.reason .section-text {
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.reason-card {
+  padding: 30px 20px 26px;
+}
+
+.reason-number {
+  top: 16px;
+  right: 16px;
+  font-size: 36px;
+}
+
+.reason-icon {
+  margin-bottom: 18px;
+  font-size: 38px;
+}
+
+.reason-card h3 {
+  font-size: 18px;
+}
+
+/* ========================================
+   WORK：小さいスマートフォン
+======================================== */
+
+.work {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.work .container::before {
+  top: -8px;
+  right: 0;
+  font-size: 68px;
+}
+
+.work .section-title {
+  font-size: 27px;
+}
+
+.work .section-text {
+  margin-bottom: 32px;
+  font-size: 13px;
+}
+
+.work-layout {
+  gap: 36px;
+}
+
+.work-intro h3 {
+  font-size: 20px;
+}
+
+.work-intro > p:not(.work-label) {
+  font-size: 13px;
+}
+
+.work-link {
+  min-height: 52px;
+  padding: 14px 17px;
+  font-size: 13px;
+}
+
+.work-step {
+  padding: 22px 15px 20px;
+}
+
+.work-step__number {
+  top: 13px;
+  right: 13px;
+  font-size: 27px;
+}
+
+.work-step__content {
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 13px;
+}
+
+.work-step__icon {
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+}
+
+.work-step__content > div:last-child {
+  padding-right: 22px;
+}
+
+.work-step h4 {
+  font-size: 16px;
+}
+
+.work-step p {
+  font-size: 12px;
+}
+@media screen and (max-width: 390px) {
+
+  .work-step {
+    min-height: 140px;
+    padding: 24px 50px 22px 18px;
+  }
+
+  .work-step__content {
+    gap: 14px;
+  }
+
+  .work-step__icon {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .work-step h4 {
+    font-size: 16px;
+  }
+
+  .work-step p {
+    font-size: 12px;
+  }
+
+  .work-step__number {
+    top: 18px;
+    right: 14px;
+    font-size: 26px;
+  }
+}
+
+/* ========================================
+   PEOPLE：小さいスマートフォン
+======================================== */
+
+.people {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.people .container::before {
+  top: -2px;
+  right: -4px;
+  font-size: 57px;
+}
+
+.people .section-title {
+  font-size: 27px;
+}
+
+.people .section-text {
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.people-grid {
+  gap: 22px;
+}
+
+.people-card__image {
+  aspect-ratio: 4 / 3;
+}
+
+.people-card__number {
+  right: 14px;
+  bottom: 12px;
+  font-size: 36px;
+}
+
+.people-card__body {
+  padding: 24px 18px 22px;
+}
+
+.people-card__body h3 {
+  margin-bottom: 17px;
+  font-size: 19px;
+}
+
+.people-card__profile {
+  margin-bottom: 17px;
+  padding-bottom: 14px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.people-card__text {
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.people-card__link {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+/* ========================================
+   RECRUIT：小さいスマートフォン
+======================================== */
+
+.recruit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.recruit .container::before {
+  top: 0;
+  right: -2px;
+  font-size: 58px;
+}
+
+.recruit-left {
+  margin-bottom: 32px;
+}
+
+.recruit .section-title {
+  font-size: 27px;
+}
+
+.recruit .section-text {
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.recruit-btn {
+  min-height: 54px;
+  font-size: 14px;
+}
+
+/* 項目名と内容を縦に並べる */
+.recruit-item {
+  display: block;
+  padding: 18px 0;
+}
+
+.recruit-item span {
+  margin-bottom: 6px;
+  font-size: 11px;
+}
+
+.recruit-item p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   ENTRY CTA：小さいスマートフォン
+======================================== */
+
+.entry-cta {
+  min-height: 560px;
+  padding: 74px 0 66px;
+}
+
+.entry-cta__english {
+  margin-bottom: 14px;
+  font-size: 11px;
+}
+
+.entry-cta__title {
+  margin-bottom: 20px;
+  font-size: 31px;
+  line-height: 1.5;
+}
+
+.entry-cta__text {
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.entry-cta__buttons {
+  margin-top: 28px;
+  gap: 12px;
+}
+
+.entry-cta__button {
+  min-height: 56px;
+  padding: 14px 16px;
+  font-size: 14px;
+}
+
+.entry-cta__note {
+  margin-top: 16px;
+  font-size: 11px;
+}
+
+/* ========================================
+   CONTACT：小さいスマートフォン
+======================================== */
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact .container::before {
+  top: 0;
+  right: -3px;
+  font-size: 49px;
+}
+
+.contact-heading {
+  margin-bottom: 30px;
+}
+
+.contact .section-title {
+  font-size: 27px;
+}
+
+.contact .section-text {
+  font-size: 13px;
+}
+
+.contact-box {
+  padding: 26px 16px;
+}
+
+.contact-form__group {
+  margin-bottom: 23px;
+}
+
+.contact-form__group label,
+.contact-form__label {
+  margin-bottom: 9px;
+  font-size: 13px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select {
+  min-height: 54px;
+  padding: 13px 14px;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  padding: 14px;
+}
+
+.contact-form__checkboxes {
+  grid-template-columns: 1fr;
+  gap: 9px;
+}
+
+.contact-checkbox {
+  min-height: 50px;
+  padding: 11px 13px;
+}
+
+.contact-checkbox span {
+  font-size: 12px;
+}
+
+.contact-privacy span {
+  font-size: 11px;
+}
+
+.contact-form__submit {
+  margin-top: 26px;
+}
+
+.contact-form__submit button {
+  min-height: 58px;
+  padding: 15px 18px;
+  font-size: 14px;
+}
+
+.contact-form__note {
+  margin-top: 16px;
+  font-size: 10px;
+}
+
+/* ========================================
+   FOOTER：小さいスマートフォン
+======================================== */
+
+.footer__main {
+  padding-top: 48px;
+  padding-bottom: 34px;
+  gap: 38px;
+}
+
+.footer__logo-ja {
+  font-size: 22px;
+}
+
+.footer__message {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.footer__address {
+  font-size: 11px;
+}
+
+.footer__contact-info a {
+  min-height: 48px;
+  padding: 11px 12px;
+  font-size: 12px;
+}
+
+/* 小型端末ではメニューも1列 */
+.footer__navigation {
+  grid-template-columns: 1fr;
+  gap: 34px;
+}
+
+.footer__heading {
+  margin-bottom: 16px;
+  font-size: 10px;
+}
+
+.footer__menu li + li {
+  margin-top: 11px;
+}
+
+.footer__menu a {
+  font-size: 12px;
+}
+
+.footer__social a {
+  width: 44px;
+  height: 44px;
+  font-size: 17px;
+}
+
+.footer__entry-button,
+.footer__company-link {
+  min-height: 54px;
+  padding: 13px 16px;
+}
+
+.footer__entry-button {
+  font-size: 13px;
+}
+
+.footer__company-link {
+  font-size: 12px;
+}
+
+.footer__bottom {
+  padding-top: 22px;
+  padding-bottom: 26px;
+  gap: 18px;
+}
+
+.footer__legal {
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer__legal a {
+  font-size: 10px;
+}
+
+.footer__copyright {
+  font-size: 8px;
+}
+
+.footer__page-top {
+  right: 14px;
+  bottom: 14px;
+  width: 44px;
+  height: 44px;
+  font-size: 14px;
+}
+
+/* ========================================
+   スマホの横はみ出し対策
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .site-header,
+  .site-header__inner,
+  main,
+  section,
+  .container,
+  .hero,
+  .hero-content,
+  .reason,
+  .reason .container,
+  .reason-grid,
+  .reason-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero-content,
+  .reason-grid {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

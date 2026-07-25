@@ -35,24 +35,34 @@ if (contactForm) {
   });
 }
 
-// ハンバーガーメニュー設定
-const menuButton = document.querySelector(".menu-button");
-const headerNav = document.querySelector(".header__nav");
-const navLinks = document.querySelectorAll(".header__nav-link");
+// ========================================
+// ハンバーガーメニュー
+// ========================================
 
-if (menuButton && headerNav) {
+const menuButton = document.querySelector(".menu-button");
+const siteNav = document.querySelector(".site-nav");
+const navLinks = document.querySelectorAll(".site-nav a");
+
+if (menuButton && siteNav) {
   const closeMenu = () => {
     menuButton.classList.remove("is-open");
-    headerNav.classList.remove("is-open");
+    siteNav.classList.remove("is-open");
+
     menuButton.setAttribute("aria-expanded", "false");
     menuButton.setAttribute("aria-label", "メニューを開く");
+
     document.body.classList.remove("menu-open");
   };
 
-  menuButton.addEventListener("click", () => {
-    const isOpen = menuButton.classList.toggle("is-open");
+  // ページを開いた時は必ず閉じた状態にする
+  closeMenu();
 
-    headerNav.classList.toggle("is-open", isOpen);
+  menuButton.addEventListener("click", () => {
+    const isOpen = !siteNav.classList.contains("is-open");
+
+    menuButton.classList.toggle("is-open", isOpen);
+    siteNav.classList.toggle("is-open", isOpen);
+
     menuButton.setAttribute("aria-expanded", String(isOpen));
     menuButton.setAttribute(
       "aria-label",
@@ -62,7 +72,15 @@ if (menuButton && headerNav) {
     document.body.classList.toggle("menu-open", isOpen);
   });
 
+  // メニュー内のリンクを押したら閉じる
   navLinks.forEach((link) => {
     link.addEventListener("click", closeMenu);
+  });
+
+  // PC幅に戻した時もメニューを閉じる
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1100) {
+      closeMenu();
+    }
   });
 }

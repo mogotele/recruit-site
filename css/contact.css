@@ -1,0 +1,292 @@
+/* お問合せ */
+.contact {
+    position: relative;
+    overflow: hidden;
+    padding: 140px 0;
+    background:
+      linear-gradient(
+        180deg,
+        #07111f 0%,
+        #0a1929 50%,
+        #07111f 100%
+      );
+  }
+  
+  .contact::before {
+    content: "CONTACT";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(212, 175, 55, 0.03);
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(100px, 15vw, 210px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .contact .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-heading {
+    text-align: center;
+  }
+  
+  .contact-box {
+    width: min(960px, 100%);
+    margin: 70px auto 0;
+    padding: 60px;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(17, 42, 67, 0.96),
+        rgba(8, 24, 40, 0.98)
+      );
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.26);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .contact-form__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  
+  .contact-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contact-form__group label,
+  .contact-form__label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  
+  .contact-form__required,
+  .contact-form__optional {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: 1.4;
+    vertical-align: middle;
+  }
+  
+  .contact-form__required {
+    color: #07111f;
+    background: #d4af37;
+  }
+  
+  .contact-form__optional {
+    color: #aeb9c5;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    color: #ffffff;
+    background: rgba(4, 15, 27, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form select {
+    height: 58px;
+    padding: 0 18px;
+  }
+  
+  .contact-form textarea {
+    min-height: 180px;
+    padding: 18px;
+    line-height: 1.8;
+    resize: vertical;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #718092;
+  }
+  
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus {
+    background: rgba(4, 15, 27, 0.9);
+    border-color: #d4af37;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+  }
+  
+  .contact-form__select {
+    position: relative;
+  }
+  
+  .contact-form__select select {
+    appearance: none;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+  
+  .contact-form__select select option {
+    color: #07111f;
+    background: #ffffff;
+  }
+  
+  .contact-form__select i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    color: #d4af37;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .contact-form__checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .contact-checkbox {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .contact-checkbox input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .contact-checkbox span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 17px;
+    color: #b8c2cd;
+    background: rgba(4, 15, 27, 0.58);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 999px;
+    font-size: 13px;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease,
+      border-color 0.3s ease;
+  }
+  
+  .contact-checkbox input:checked + span {
+    color: #07111f;
+    background: #d4af37;
+    border-color: #d4af37;
+  }
+  
+  .contact-checkbox input:focus-visible + span {
+    outline: 2px solid #d4af37;
+    outline-offset: 3px;
+  }
+  
+  .contact-form__privacy {
+    padding-top: 6px;
+  }
+  
+  .contact-privacy {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    color: #b7c1cc;
+    font-size: 13px;
+    line-height: 1.8;
+    cursor: pointer;
+  }
+  
+  .contact-privacy input {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: #d4af37;
+  }
+  
+  .contact-privacy a {
+    color: #d4af37;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  .contact-form__submit {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form__submit button {
+    min-width: 310px;
+    min-height: 64px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 17px 38px;
+    color: #07111f;
+    background:
+      linear-gradient(
+        135deg,
+        #e1c45f,
+        #b8891f
+      );
+    border: 1px solid #d4af37;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 18px 42px rgba(212, 175, 55, 0.18);
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  
+  .contact-form__submit button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 26px 55px rgba(212, 175, 55, 0.34);
+  }
+  
+  .contact-form__submit button:active {
+    transform: translateY(-1px);
+  }
+  
+  .contact-form__note {
+    margin: -10px 0 0;
+    color: #8794a2;
+    font-size: 12px;
+    text-align: center;
+  }

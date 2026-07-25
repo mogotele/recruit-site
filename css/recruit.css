@@ -1,0 +1,147 @@
+/* 募集要項 */
+
+.recruit{
+
+    position:relative;
+    
+    overflow:hidden;
+    
+    padding:140px 0;
+    
+    background:#07111f;
+    
+    }
+    
+    .recruit::before{
+    
+    content:"RECRUIT";
+    
+    position:absolute;
+    
+    left:50%;
+    
+    top:15px;
+    
+    transform:translateX(-50%);
+    
+    font-family:"Montserrat",sans-serif;
+    
+    font-size:clamp(90px,12vw,180px);
+    
+    font-weight:900;
+    
+    color:rgba(212, 175, 55, 0.3);
+    
+    letter-spacing:.08em;
+    
+    pointer-events:none;
+    
+    }
+    
+    .recruit .container{
+    
+    display:grid;
+    
+    grid-template-columns:400px 1fr;
+    
+    gap:80px;
+    
+    position:relative;
+    
+    z-index:1;
+    
+    }
+    
+    .recruit-left{
+    
+    position:sticky;
+    
+    top:120px;
+    
+    height:fit-content;
+    
+    }
+    
+    .recruit-right{
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    gap:20px;
+    
+    }
+    
+    .recruit-item{
+    
+    display:grid;
+    
+    grid-template-columns:180px 1fr;
+    
+    padding:25px 30px;
+    
+    background:#0e2237;
+    
+    border:1px solid rgba(255,255,255,.08);
+    
+    border-radius:16px;
+    
+    transition:.3s;
+    
+    }
+    
+    .recruit-item:hover{
+    
+    border-color:#d4af37;
+    
+    transform:translateX(8px);
+    
+    }
+    
+    .recruit-item span{
+    
+    color:#d4af37;
+    
+    font-weight:700;
+    
+    }
+    
+    .recruit-item p{
+    
+    margin:0;
+    
+    color:#fff;
+    
+    line-height:1.8;
+    
+    }
+    
+    .recruit-btn{
+    
+    display:inline-block;
+    
+    margin-top:40px;
+    
+    padding:18px 45px;
+    
+    background:#d4af37;
+    
+    color:#07111f;
+    
+    text-decoration:none;
+    
+    font-weight:bold;
+    
+    border-radius:50px;
+    
+    transition:.3s;
+    
+    }
+    
+    .recruit-btn:hover{
+    
+    transform:translateY(-5px);
+    
+    box-shadow:0 20px 40px rgba(212,175,55,.3);
+    
+    }

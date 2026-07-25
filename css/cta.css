@@ -1,0 +1,159 @@
+/* CTA */
+
+.entry-cta {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+      url("../images/cta-truck.jpg")
+      center center / cover
+      no-repeat;
+  }
+  
+  /* .entry-cta::before {
+    content: "ENTRY";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(4, 12, 22, 0.98) 0%,
+        rgba(4, 12, 22, 0.88) 42%,
+        rgba(4, 12, 22, 0.42) 72%,
+        rgba(4, 12, 22, 0.28) 100%
+      );
+  } */
+  
+  .entry-cta::before {
+    content: "ENTRY";
+    position: absolute;
+    right: -20px;
+    bottom: -28px;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(120px, 19vw, 280px);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .entry-cta__overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(212, 175, 55, 0.05),
+        transparent 35%,
+        rgba(0, 0, 0, 0.35)
+      );
+  }
+  
+  .entry-cta .container {
+    position: relative;
+    z-index: 2;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .entry-cta__content {
+    max-width: 700px;
+    margin-left: 80px;
+  }
+  
+  .entry-cta__english {
+    margin: 0 0 22px;
+    color: #d4af37;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+  }
+  
+  .entry-cta__title {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Zen Old Mincho", serif;
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.06em;
+    text-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  }
+  
+  .entry-cta__text {
+    margin: 34px 0 0;
+    color: #d4dbe3;
+    font-size: 15px;
+    line-height: 2.1;
+  }
+  
+  .entry-cta__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 48px;
+  }
+  
+  .entry-cta__button {
+    min-width: 240px;
+    min-height: 62px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 16px 30px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+      transform 0.35s ease,
+      background-color 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  
+  .entry-cta__button--primary {
+    color: #07111f;
+    background:
+      linear-gradient(
+        135deg,
+        #e0c25c,
+        #b98a20
+      );
+    border: 1px solid #d4af37;
+    box-shadow: 0 18px 42px rgba(212, 175, 55, 0.2);
+  }
+  
+  .entry-cta__button--primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 26px 55px rgba(212, 175, 55, 0.34);
+  }
+  
+  .entry-cta__button--secondary {
+    color: #ffffff;
+    background: rgba(7, 17, 31, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(8px);
+  }
+  
+  .entry-cta__button--secondary:hover {
+    transform: translateY(-5px);
+    color: #d4af37;
+    border-color: #d4af37;
+    background: rgba(7, 17, 31, 0.86);
+  }
+  
+  .entry-cta__note {
+    margin: 20px 0 0;
+    color: #a7b1bc;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }

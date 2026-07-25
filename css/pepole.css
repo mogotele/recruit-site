@@ -1,0 +1,194 @@
+/* 社員紹介 */
+
+.people {
+    position: relative;
+    overflow: hidden;
+    padding: 130px 0;
+    background:
+      linear-gradient(
+        180deg,
+        #07111f 0%,
+        #09192a 50%,
+        #07111f 100%
+      );
+  }
+  
+  .people::before {
+    content: "PEOPLE";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.25);
+    font-family: "Montserrat", sans-serif;
+    font-size:clamp(120px,18vw,220px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .people .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 70px;
+  }
+  
+  .people-card {
+    overflow: hidden;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(17, 42, 67, 0.97),
+        rgba(9, 25, 42, 0.97)
+      );
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+    transition:
+      transform 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  
+  .people-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 35px 75px rgba(0, 0, 0, 0.3);
+  }
+  
+  .people-card__image {
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+  }
+  
+  .people-card__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        to top,
+        rgba(6, 18, 31, 0.82) 0%,
+        rgba(6, 18, 31, 0.08) 55%,
+        transparent 100%
+      );
+  }
+  
+  .people-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(0.85) contrast(1.05);
+    transition:
+      transform 0.6s ease,
+      filter 0.6s ease;
+  }
+  
+  .people-card:hover .people-card__image img {
+    transform: scale(1.05);
+    filter: saturate(1) contrast(1.08);
+  }
+  
+  .people-card__number {
+    position: absolute;
+    right: 22px;
+    bottom: 14px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: "Montserrat", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .people-card__body {
+    padding: 34px 30px 36px;
+  }
+  
+  .people-card__job {
+    margin: 0 0 16px;
+    color: #d4af37;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+  }
+  
+  .people-card h3 {
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-family: "Zen Old Mincho", serif;
+    font-size: 23px;
+    line-height: 1.7;
+  }
+  
+  .people-card__profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    margin-bottom: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .people-card__profile p {
+    margin: 0;
+    color: #dce3ea;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .people-card__profile span {
+    padding: 5px 10px;
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 999px;
+    font-size: 11px;
+  }
+  
+  .people-card__text {
+    margin: 0;
+    color: #aeb9c5;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  
+  .people-card__link {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 28px;
+    padding-bottom: 8px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.55);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .people-card__link span {
+    color: #d4af37;
+    transition: transform 0.3s ease;
+  }
+  
+  .people-card__link:hover {
+    color: #d4af37;
+  }
+  
+  .people-card__link:hover span {
+    transform: translateX(6px);
+  }

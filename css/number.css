@@ -1,0 +1,143 @@
+/* 数字で見る西浦商会 */
+
+.numbers {
+    position: relative;
+    overflow: hidden;
+    padding: 130px 0;
+    background:
+      linear-gradient(
+        180deg,
+        #081523 0%,
+        #0b1b2d 50%,
+        #081523 100%
+      );
+  }
+  
+  .numbers::before {
+    content: "DATA";
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.25);
+    font-family: "Montserrat", sans-serif;
+    font-size: 280px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .numbers .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 70px;
+  }
+  
+  .number-card {
+    position: relative;
+    min-height: 330px;
+    padding: 42px 28px 36px;
+    text-align: center;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(17, 42, 67, 0.95),
+        rgba(10, 27, 45, 0.95)
+      );
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 20px;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
+    transition:
+      transform 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  
+  .number-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    right: 28px;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      #d4af37,
+      transparent
+    );
+  }
+  
+  .number-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
+  }
+  
+  .number-card__icon {
+    width: 66px;
+    height: 66px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 28px;
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.24);
+    border-radius: 50%;
+    font-size: 25px;
+  }
+  
+  .number-card__label {
+    margin: 0 0 20px;
+    color: #d9e0e8;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+  }
+  
+  .number-card__value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .number-card__value span {
+    color: #d4af37;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .number-card__value small {
+    color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .number-card__note {
+    margin: 0;
+    color: #9eabb9;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  
+  .numbers-caution {
+    margin: 34px 0 0;
+    color: #8390a0;
+    font-size: 12px;
+    text-align: right;
+  }

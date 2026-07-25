@@ -1,0 +1,120 @@
+/* 福利厚生 */
+.environment {
+    position: relative;
+    overflow: hidden;
+    padding: 130px 0;
+    background:
+      linear-gradient(
+        180deg,
+        #081523 0%,
+        #0a1a2c 50%,
+        #081523 100%
+      );
+  }
+  
+  .environment::before {
+    content: "ENVIRONMENT";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(212, 175, 55, 0.25);
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(90px, 12vw, 180px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .environment .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .environment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 70px;
+  }
+  
+  .environment-card {
+    position: relative;
+    min-height: 290px;
+    padding: 38px 28px 34px;
+    text-align: center;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(17, 42, 67, 0.96),
+        rgba(9, 25, 42, 0.96)
+      );
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
+    transition:
+      transform 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  
+  .environment-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    right: 28px;
+    height: 2px;
+    background:
+      linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        transparent
+      );
+    opacity: 0.7;
+  }
+  
+  .environment-card:hover {
+    transform: translateY(-9px);
+    border-color: rgba(212, 175, 55, 0.65);
+    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.28);
+  }
+  
+  .environment-card__icon {
+    width: 68px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 26px;
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 50%;
+    font-size: 25px;
+    transition:
+      transform 0.35s ease,
+      background-color 0.35s ease;
+  }
+  
+  .environment-card:hover .environment-card__icon {
+    transform: scale(1.08);
+    background: rgba(212, 175, 55, 0.14);
+  }
+  
+  .environment-card h3 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  
+  .environment-card p {
+    margin: 0;
+    color: #aeb9c5;
+    font-size: 13px;
+    line-height: 1.9;
+  }

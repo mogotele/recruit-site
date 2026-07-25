@@ -1,0 +1,123 @@
+/* 入社フロー */
+.selection-flow {
+    position: relative;
+    overflow: hidden;
+    padding: 130px 0;
+    background:
+      linear-gradient(
+        180deg,
+        #07111f 0%,
+        #0a1929 50%,
+        #07111f 100%
+      );
+  }
+  
+  .selection-flow::before {
+    content: "FLOW";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(212, 175, 55, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(110px, 16vw, 220px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .selection-flow .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .selection-flow__list {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr) 42px
+      minmax(0, 1fr) 42px
+      minmax(0, 1fr) 42px
+      minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    margin-top: 70px;
+  }
+  
+  .selection-step {
+    position: relative;
+    min-height: 320px;
+    padding: 42px 26px 34px;
+    text-align: center;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(17, 42, 67, 0.96),
+        rgba(9, 25, 42, 0.96)
+      );
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
+    transition:
+      transform 0.35s ease,
+      border-color 0.35s ease;
+  }
+  
+  .selection-step:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.68);
+  }
+  
+  .selection-step__number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: rgba(212, 175, 55, 0.28);
+    font-family: "Montserrat", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .selection-step__icon {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    margin: 20px auto 28px;
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    border-radius: 50%;
+    font-size: 26px;
+  }
+  
+  .selection-step h3 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .selection-step p {
+    margin: 0;
+    color: #aeb9c5;
+    font-size: 13px;
+    line-height: 1.9;
+  }
+  
+  .selection-flow__arrow {
+    display: grid;
+    place-items: center;
+    color: #d4af37;
+    font-size: 22px;
+  }
+  
+  .selection-flow__note {
+    margin: 34px 0 0;
+    color: #8390a0;
+    font-size: 12px;
+    text-align: right;
+  }

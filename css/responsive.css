@@ -1,0 +1,243 @@
+/* スマホ・タブレット設定 */
+
+/* スマホ */
+/* @media (max-width: 1100px) {
+    .site-nav {
+      display: none;
+    }
+  
+    .site-header__inner {
+      min-height: 74px;
+    }
+  
+    .site-header__entry {
+      margin-left: auto;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .site-header__inner {
+      padding: 0 20px;
+    }
+  
+    .site-logo__main {
+      font-size: 19px;
+    }
+  
+    .site-logo__sub {
+      font-size: 9px;
+    }
+  
+    .site-header__entry {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .hero {
+      padding-top: 130px;
+    }
+  } */
+  /* ========================================
+   タブレット
+======================================== */
+
+@media (max-width: 1100px) {
+    .site-nav {
+      display: none;
+    }
+  
+    .site-header__inner {
+      min-height: 74px;
+      padding: 0 24px;
+    }
+  
+    .site-header__entry {
+      margin-left: auto;
+    }
+  
+    .hero {
+      padding: 140px 5% 70px;
+    }
+  
+    .hero-content {
+      width: min(620px, 100%);
+    }
+  
+    .hero-title {
+      font-size: clamp(56px, 8vw, 76px);
+    }
+  
+    .hero-feature {
+      gap: 16px;
+    }
+  }
+  
+  /* ========================================
+     スマートフォン
+  ======================================== */
+  
+  @media (max-width: 768px) {
+    html,
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+  
+    .site-header {
+      position: absolute;
+    }
+  
+    .site-header__inner {
+      min-height: 92px;
+      padding: 0 18px;
+    }
+  
+    .site-logo__main {
+      font-size: 24px;
+    }
+  
+    .site-logo__sub {
+      margin-top: 8px;
+      font-size: 11px;
+      letter-spacing: 0.28em;
+    }
+  
+    .site-header__entry {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .hero {
+      min-height: auto;
+      padding: 150px 20px 64px;
+      align-items: flex-start;
+      background-position: 66% center;
+    }
+  
+    .hero-content {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .hero-sub {
+      margin: 0 0 20px;
+      font-size: 22px;
+    }
+  
+    .hero-title {
+      margin: 0;
+      font-size: clamp(46px, 13vw, 62px);
+      line-height: 1.12;
+      overflow-wrap: anywhere;
+    }
+  
+    .hero-job {
+      margin: 30px 0 38px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  
+    .hero-feature {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px 14px;
+      margin-bottom: 38px;
+    }
+  
+    .feature-box {
+      min-width: 0;
+      text-align: center;
+    }
+  
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+  
+    .feature-box h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .feature-box p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  
+    .hero-btn {
+      width: 100%;
+      max-width: 360px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+  }
+  
+  /* ========================================
+     小さいスマートフォン
+  ======================================== */
+  
+  @media (max-width: 390px) {
+    .site-header__inner {
+      min-height: 84px;
+      padding: 0 14px;
+    }
+  
+    .site-logo__main {
+      font-size: 21px;
+    }
+  
+    .site-logo__sub {
+      font-size: 9px;
+    }
+  
+    .hero {
+      padding: 132px 16px 52px;
+      background-position: 64% center;
+    }
+  
+    .hero-sub {
+      font-size: 19px;
+    }
+  
+    .hero-title {
+      font-size: 44px;
+    }
+  
+    .hero-job {
+      font-size: 17px;
+    }
+  
+    .hero-feature {
+      gap: 24px 10px;
+    }
+  
+    .icon {
+      width: 50px;
+      height: 50px;
+      font-size: 21px;
+    }
+  
+    .feature-box h3 {
+      font-size: 14px;
+    }
+  
+    .feature-box p {
+      font-size: 12px;
+    }
+  }

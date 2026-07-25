@@ -1,0 +1,191 @@
+/* トップ画像・キャッチコピー */
+
+.hero {
+    min-height: 100vh;
+    padding: 170px 6% 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(3,9,20,.85),
+        rgba(3,9,20,.55),
+        rgba(3,9,20,.1)
+        ),
+      url("../image/nishiura_main.png");
+       background-size: cover;
+       background-position: center right;
+  }
+  
+  .hero__sub {
+    margin-bottom: 16px;
+    color: #d6b45f;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    font-family: 'Zen Old Mincho',serif;
+  }
+  
+  .hero__title {
+    margin: 0;
+    font-size: clamp(42px, 7vw, 70px);
+    line-height: 1.2;
+  }
+  
+  /* スマホ対応 */
+  @media(max-width:768px){
+
+    .hero-title{
+    
+    font-size:48px;
+    
+    }
+    
+    .hero-feature{
+    
+    display:grid;
+    
+    grid-template-columns:repeat(2,1fr);
+    
+    }
+    
+    }
+  .hero__text {
+    max-width: 600px;
+    margin: 28px 0;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .hero__button {
+    width: fit-content;
+    padding: 16px 34px;
+    color: #07111f;
+    background-color: #d6b45f;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .hero__button:hover {
+    opacity: 0.85;
+  }
+
+   
+  .entry {
+    padding: 100px 8%;
+    color: #07111f;
+    background-color: #ffffff;
+  }
+  
+  .entry h2 {
+    font-size: 36px;
+  }
+  
+  .hero-content{
+
+    width:600px;
+
+}
+
+.hero-sub{
+
+    color:#d4a63f;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    font-family: 'Zen Old Mincho',serif;
+
+}
+
+.hero-title{
+
+    color:white;
+
+    font-size:82px;
+
+    line-height:1.2;
+
+    margin:15px 0;
+
+    font-family: 'Zen Old Mincho',serif;
+
+}
+
+.hero-job{
+
+    color:white;
+
+    font-size:26px;
+
+    margin-bottom:50px;
+
+}
+
+.hero-feature{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.feature-box{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.icon{
+
+    width:60px;
+
+    height:60px;
+
+    border:2px solid #d4a63f;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size: 30px;
+
+    margin:auto;
+
+    color:#d4a63f;;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    background:#c79a2b;
+
+    color:white;
+
+    padding:18px 40px;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#d7aa3d;
+
+}

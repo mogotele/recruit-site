@@ -1,0 +1,155 @@
+.reason{
+
+    padding:120px 0;
+
+    background:#081523;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.reason::before {
+    content: "WHY";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) ;
+
+    font-size: 260px;
+    font-weight: 900;
+
+    font-family: "Montserrat", sans-serif;
+
+    color: rgba(255, 255, 255, 0.25);
+
+    letter-spacing: 0.15em;
+
+    user-select: none;
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.container{
+
+    position: relative;
+
+    z-index: 1;
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+.section-subtitle{
+
+    color:#d4af37;
+
+    letter-spacing:.3em;
+
+    font-size:14px;
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    font-family:'Montserrat',sans-serif;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:white;
+
+    font-family: 'Zen Old Mincho',serif;
+}
+
+.section-text{
+
+    text-align:center;
+
+    color:#bfc7d5;
+
+    margin-bottom:70px;
+
+    line-height:1.8;
+
+}
+
+.reason-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.reason-card{
+
+    background:#0f2237;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:45px 35px;
+
+    transition:.35s;
+
+}
+
+.reason-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#d4af37;
+
+}
+
+.reason-number{
+
+    font-size:52px;
+
+    color:rgba(212,175,55,.18);
+
+    font-weight:bold;
+
+}
+
+.reason-icon{
+
+    font-size:42px;
+
+    color:#d4af37;
+
+    margin:25px 0;
+
+}
+
+.reason-card h3{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.reason-card p{
+
+    color:#c8d0dc;
+
+    line-height:1.8;
+
+}
